@@ -2,16 +2,14 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Sobre Mim</title>
+    <title>The Null</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <aside>
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ZK8R4xwFHIJUFNhep6uduQHaJ3%26pid%3DApi&f=1&ipt=67101a6a0760e3f7cf617fdc21972cf3f70513383ab8eb3d5e3a5453fe29dda5&ipo=images"
-          alt="Yo"
-        />
+      <!-- Left sidebar - User info -->
+      <aside class="left-side">
+        <img src="./assets/images/yo.png" alt="Yo" />
         <h2>: : Player Sheet : :</h2>
         <div class="description">
           <div class="stat-block">
@@ -27,29 +25,30 @@
             </ul>
           </div>
           <p>
-            A lost young adult that is looking for meaning for his life. Alredy
-            wasted 4 years in computer science.
+            A lost young adult that is looking for meaning for his life. Wasted
+            almost 4 years in computer science.
           </p>
         </div>
       </aside>
 
+      <!-- Center content -->
       <section class="content">
-        <h1 class="main-title">Hi, I'm Null</h1>
+        <header>
+          <h1 class="main-title">Hi, I'm Null</h1>
+        </header>
 
         <article class="about">
           <p>
-            I'm a person caught between dreams and reality. While I try to
-            figure out what's next, I keep myself busy learning, creating, and
-            sometimes just staring at the void. This page is a small reflection
-            of who I am — or at least who I think I am today. If you're here
-            looking for answers, sorry to disappoint: I'm still looking for mine
-            too.
+            I'm a person caught between dreams and reality. This page is a small
+            reflection of who I am — or at least who I think I am today. If
+            you're here looking for answers, sorry to disappoint: I'm still
+            looking for mine too.
           </p>
         </article>
 
         <article class="navigation">
           <h2>: : Content : :</h2>
-          <div class="card-container">
+          <nav class="card-container">
             <div class="nav-grid">
               <a href="projects.html" class="card">
                 <img
@@ -59,16 +58,119 @@
                 <h3>Crafts</h3>
               </a>
               <a href="journal.html" class="card">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F001%2F218%2F694%2Foriginal%2Funder-construction-warning-sign-vector.jpg&f=1&nofb=1&ipt=2ba178485417dc3d59a3a595f2ffd7ab9eca03e53bd7704de8ae1f48553e9e61"
-                  alt="Blabbering"
-                />
+                <img src="./assets/images/necro.png" alt="Blabbering" />
                 <h3>Blabbering</h3>
               </a>
             </div>
-          </div>
+          </nav>
         </article>
       </section>
+
+      <!-- Right sidebar - Links and badges -->
+      <aside class="the-other-left">
+        <h2>: : Cool Stuff : :</h2>
+        <div class="stuff">
+          <img
+            src="./assets/images/badges/H0t7Ypl.png"
+            alt="https://fairycakesbakery.neocities.org/blinkies"
+            style="width: 85px; height: 15px"
+          />
+          <img
+            src="./assets/images/blinkies/silliness.gif"
+            alt="https://fairycakesbakery.neocities.org/blinkies"
+            style="width: 150px; height: 20px"
+          />
+          <img
+            src="./assets/images/stamps/cat.png"
+            alt="https://blog.spacehey.com/entry?id=593815"
+            style="width: 99px; height: 56px"
+          />
+          <img
+            src="./assets/images/stamps/goths.gif"
+            alt="https://raining-starss.neocities.org/stampcollection 2"
+            style="width: 99px; height: 56px"
+          />
+          <img
+            src="./assets/images/stamps/nut.png"
+            alt="https://raining-starss.neocities.org/stampcollection"
+            style="width: 99px; height: 56px"
+          />
+          <img
+            src="./assets/images/stamps/roly.png"
+            alt="https://raining-starss.neocities.org/stampcollection"
+            style="width: 99px; height: 56px"
+          />
+        </div>
+
+        <nav class="blog-links">
+          <h3>: : Cool People : :</h3>
+          <ul>
+            <li><a href="https://mish-corner.neocities.org">Mish Corner</a></li>
+            <!-- <li><a href="https://blog2.com">Blog Name 2</a></li>
+            <li><a href="https://blog3.com">Blog Name 3</a></li> -->
+          </ul>
+        </nav>
+
+        <footer>
+          <p>
+            I'm looking for anti-nazi and communist badges/stamps/blinkies if
+            you send me some I can link your page
+          </p>
+        </footer>
+      </aside>
     </main>
+
+    <script>
+      // Apply random colors to each blog link
+      const links = document.querySelectorAll(".blog-links a");
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#"; 
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      links.forEach((link) => {
+        link.style.color = getRandomColor();
+      });
+
+      // Position images randomly inside .stuff without overlapping the title
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".the-other-left .stuff img");
+        const container = document.querySelector(".stuff");
+
+        if (!container) {
+          console.error('Container ".stuff" not found!');
+          return;
+        }
+
+        function getRandom(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        const containerWidth = container.offsetWidth;
+        const containerHeight = container.offsetHeight;
+
+        images.forEach((img) => {
+          img.style.position = "absolute";
+          img.style.zIndex = "1";
+
+          const width = img.offsetWidth || 100;
+          const height = img.offsetHeight || 40;
+
+          let x = getRandom(0, containerWidth - width);
+          let y = getRandom(45, containerHeight - height); // Avoid top area
+
+          img.style.left = `${x}px`;
+          img.style.top = `${y}px`;
+
+          const rotate = getRandom(-20, 20);
+          img.style.transform = `rotate(${rotate}deg)`;
+        });
+      });
+    </script>
   </body>
 </html>

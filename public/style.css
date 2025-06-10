@@ -1,9 +1,169 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+@font-face {
+  font-family: "Audiowide";
+  src: url("assets/fonts/Audiowide.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roomach";
+  src: url("assets/fonts/Roomach.ttf") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #08070a;
+  --card-bg: #08070a;
+  --accent-color: #7d3133;
+  --text-color: #fff;
+
+  --font-title: "Roomach", cursive;
+  --font-body: "Audiowide", monospace;
+  --font-alt: "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-color: var(--bg-color);
+  background-image: url("./assets/images/otis-redding.png");
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-family: var(--font-title);
+  font-weight: bolder;
+  color: var(--accent-color);
+  font-size: 1.5em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+aside {
+  width: 20%;
+  border: 2px dashed var(--accent-color);
+  padding: 15px;
+  text-align: center;
+}
+
+aside img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+}
+
+aside h2 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.stat-block {
+  display: flex;
+  border: 2px dashed var(--accent-color);
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.stat-block ul {
+  width: 50%;
+  list-style: none;
+}
+
+.stat-block li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-block strong {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.description {
+  padding: 0px 10px;
+  text-align: left;
+}
+
+section.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed var(--accent-color);
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about h2, .navigation h2 {
+    text-align: center;
+}
+
+.about > .lists {
+display: flex;
+justify-content: space-around;
+}
+
+.nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 230px;
+  background-color: var(--card-bg);
+  border: 2px dashed var(--accent-color);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: 0;
 }

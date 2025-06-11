@@ -1,0 +1,64 @@
+/* Import custom fonts */
+@font-face {
+  font-family: "Audiowide";
+  src: url("../assets/fonts/Audiowide.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roomach";
+  src: url("../assets/fonts/Roomach.ttf") format("woff2");
+  font-display: swap;
+}
+
+/* Global theme variables */
+:root {
+  --bg-color: #08070a;
+  --card-bg: #08070a;
+  --accent-color: #7d3133;
+  --text-color: #fff;
+
+  --font-title: "Roomach", cursive;
+  --font-body: "Audiowide", monospace;
+  --font-alt: "Courier New", monospace;
+}
+
+/* Reset defult styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  background-image: url("../assets/images/otis-redding.png"); /* Retro-style background */
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-family: var(--font-title);
+  font-weight: bolder;
+  color: var(--accent-color);
+  font-size: 1.5em;
+}
+
+a:visited {
+  color: #a87071;
+}
+
+img:hover {
+  animation: shake 2s ease-in-out infinite;
+}

@@ -1,0 +1,75 @@
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 230px;
+  background-color: var(--card-bg);
+  border: 2px dashed var(--accent-color);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card:hover img {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Sidebar Images */
+.stuff img {
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.blog-links ul {
+  list-style: none;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-2px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(2px, 2px) rotate(1deg);
+  }
+  30% {
+    transform: translate(-2px, 0px) rotate(0deg);
+  }
+  40% {
+    transform: translate(2px, 0px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-2px, 2px) rotate(1deg);
+  }
+  60% {
+    transform: translate(2px, -2px) rotate(0deg);
+  }
+  70% {
+    transform: translate(-2px, 0px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(2px, 0px) rotate(1deg);
+  }
+  90% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}

@@ -1,0 +1,93 @@
+aside {
+  width: 20%;
+  border: 2px dashed var(--accent-color);
+  padding: 15px;
+  text-align: center;
+}
+
+aside img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+}
+
+aside h2 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.stat-block {
+  display: flex;
+  border: 2px dashed var(--accent-color);
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.stat-block ul {
+  width: 50%;
+  list-style: none;
+}
+
+.stat-block li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-block strong {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.description {
+  padding: 0px 10px;
+  text-align: left;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about h2,
+.navigation h2 {
+  text-align: center;
+}
+
+.nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.the-other-left {
+  position: relative;
+  overflow: visible;
+}
+
+.stuff {
+  height: 50%;
+}
+
+.stuff img {
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.blog-links {
+  padding: 5px;
+  border-bottom: 2px solid var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.blog-links ul {
+  list-style: none;
+}

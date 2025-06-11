@@ -2,26 +2,46 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noai, noimageai" />
     <title>Under Construction - The Null</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/pages/journal.css" />
   </head>
 
   <body>
-    <main class="construction-page">
-      <h1>: : Under Construction : :</h1>
-      <p>This page is still a mess of wires and half-baked ideas.</p>
-      <p>Check back later — or don't.</p>
+    <main class="journal-page">
+      <!-- Sidebar Navigation -->
+      <aside class="left-nav">
+        <div class="mood-note">
+          <p>This is where I write things that make sense only in my head.</p>
+        </div>
 
-      <div class="warning-sign">
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F001%2F218%2F694%2Foriginal%2Funder-construction-warning-sign-vector.jpg&f=1&nofb=1"
-          alt="Under Construction Sign"
-        />
-      </div>
+        <h2>: : Navigation : :</h2>
+        <nav class="internal-links">
+          <ul>
+            <li><a href="../index.html">← Home</a></li>
+            <li><a href="./projects.html">Crafts</a></li>
+            <li><a href="./photography.html">Photography</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <nav class="back-home">
-        <a href="../index.html">← Back to the void</a>
-      </nav>
+      <section class="journal-content">
+        <header>
+          <h1 class="page-title">Blabbering</h1>
+          <p class="subtitle">
+            A collection of thoughts I probably shouldn't share.
+          </p>
+        </header>
+
+        <article class="entry">
+          <h2>: : Entry #000 : :</h2>
+          <time datetime="2025-04-05">April 5, 2025</time>
+          <p>This is a test entry</p>
+        </article>
+      </section>
     </main>
   </body>
 </html>

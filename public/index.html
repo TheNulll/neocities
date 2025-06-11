@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Null</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
     <main>
@@ -50,16 +51,17 @@
           <h2>: : Content : :</h2>
           <nav class="card-container">
             <div class="nav-grid">
-              <a href="projects.html" class="card">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F001%2F218%2F694%2Foriginal%2Funder-construction-warning-sign-vector.jpg&f=1&nofb=1&ipt=2ba178485417dc3d59a3a595f2ffd7ab9eca03e53bd7704de8ae1f48553e9e61"
-                  alt="Crafts"
-                />
+              <a href="pages/projects.html" class="card">
+                <img src="./assets/images/projects.png" alt="Crafts" />
                 <h3>Crafts</h3>
               </a>
-              <a href="journal.html" class="card">
+              <a href="pages/journal.html" class="card">
                 <img src="./assets/images/necro.png" alt="Blabbering" />
                 <h3>Blabbering</h3>
+              </a>
+              <a href="pages/photo.html" class="card">
+                <img src="./assets/images/polaroid.png" alt="Blabbering" />
+                <h3>Photography</h3>
               </a>
             </div>
           </nav>
@@ -106,8 +108,7 @@
           <h3>: : Cool People : :</h3>
           <ul>
             <li><a href="https://mish-corner.neocities.org">Mish Corner</a></li>
-            <!-- <li><a href="https://blog2.com">Blog Name 2</a></li>
-            <li><a href="https://blog3.com">Blog Name 3</a></li> -->
+            <li><a href="https://splattacks.neocities.org/">Splattacks</a></li>
           </ul>
         </nav>
 
@@ -119,58 +120,5 @@
         </footer>
       </aside>
     </main>
-
-    <script>
-      // Apply random colors to each blog link
-      const links = document.querySelectorAll(".blog-links a");
-
-      function getRandomColor() {
-        const letters = "0123456789ABCDEF";
-        let color = "#"; 
-        for (let i = 0; i < 6; i++) {
-          color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-      }
-
-      links.forEach((link) => {
-        link.style.color = getRandomColor();
-      });
-
-      // Position images randomly inside .stuff without overlapping the title
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll(".the-other-left .stuff img");
-        const container = document.querySelector(".stuff");
-
-        if (!container) {
-          console.error('Container ".stuff" not found!');
-          return;
-        }
-
-        function getRandom(min, max) {
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        const containerWidth = container.offsetWidth;
-        const containerHeight = container.offsetHeight;
-
-        images.forEach((img) => {
-          img.style.position = "absolute";
-          img.style.zIndex = "1";
-
-          const width = img.offsetWidth || 100;
-          const height = img.offsetHeight || 40;
-
-          let x = getRandom(0, containerWidth - width);
-          let y = getRandom(45, containerHeight - height); // Avoid top area
-
-          img.style.left = `${x}px`;
-          img.style.top = `${y}px`;
-
-          const rotate = getRandom(-20, 20);
-          img.style.transform = `rotate(${rotate}deg)`;
-        });
-      });
-    </script>
   </body>
 </html>

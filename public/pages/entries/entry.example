@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noai, noimageai" />
+    <title>First Entry - The Null</title>
+    <link rel="stylesheet" href="../../styles/base.css" />
+    <link rel="stylesheet" href="../../styles/layout.css" />
+    <link rel="stylesheet" href="../../styles/components.css" />
+    <link rel="stylesheet" href="../../styles/pages/entry.css" />
+    <script src="../../scripts/random-colored-links.js"></script>
+  </head>
+
+  <body>
+    <main class="entry-page">
+      <aside class="left-nav">
+        <h2>: : Navigation : :</h2>
+        <nav class="internal-links">
+          <ul>
+            <li><a href="../../index.html">← Home</a></li>
+            <li><a href="../journal.html">← Back to Journal</a></li>
+            <li><a href="../projects.html">Crafts</a></li>
+            <li><a href="../photography.html">Photography</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="entry-content">
+        <header>
+          <h1 class="entry-title">First Entry</h1>
+          <p class="entry-date">June 1, 2025</p>
+          <p class="entry-subtitle">A random thought that became this entry.</p>
+        </header>
+
+        <article>
+          <p>
+            
+          </p>
+
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

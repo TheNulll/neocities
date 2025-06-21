@@ -20,7 +20,6 @@
 
   --font-title: "Roomach", cursive;
   --font-body: "Audiowide", monospace;
-  --font-alt: "Courier New", monospace;
 }
 
 /* Reset defult styling*/
@@ -29,6 +28,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {

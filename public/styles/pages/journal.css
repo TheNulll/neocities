@@ -1,14 +1,13 @@
 .journal-page {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  padding: 20px;
+  justify-content: flex-start;
+  padding: 5%;
 }
 
 .left-nav {
-  width: 20%;
   border: 2px dashed var(--accent-color);
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -22,27 +21,14 @@
   margin-bottom: 20px;
 }
 
-.left-nav li {
-  margin: 10px 0;
-}
-
 .left-nav a {
   color: var(--accent-color);
   font-family: var(--font-title);
   font-size: 1rem;
 }
 
-.left-nav .mood-note {
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-.journal-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  border: 2px dashed var(--accent-color);
-  padding: 20px;
+main {
+  margin-left: 10%;
 }
 
 .page-title {
@@ -50,29 +36,21 @@
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-style: italic;
-  color: #bbb;
-  margin-bottom: 30px;
-}
-
 .entry {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed var(--accent-color);
+  padding: 20px;
 }
 
-.entry h2 {
-  margin-bottom: 10px;
+.link-entry {
+  color: var(--text-color) !important;
 }
 
-.entry time {
+.entry small {
   color: #777;
-  font-size: 0.9rem;
+  font-size: 0.6em;
   display: block;
-  margin-bottom: 15px;
-}
-
-.page-footer {
-  margin-top: 40px;
-  font-style: italic;
-  color: #555;
+  margin-bottom: 5px;
 }

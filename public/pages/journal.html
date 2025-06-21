@@ -8,39 +8,30 @@
     <link rel="stylesheet" href="../styles/layout.css" />
     <link rel="stylesheet" href="../styles/components.css" />
     <link rel="stylesheet" href="../styles/pages/journal.css" />
+    <script src="../scripts/random-colored-links.js" defer></script>
+    <script src="../scripts/journal.js" defer></script>
   </head>
 
-  <body>
-    <main class="journal-page">
-      <!-- Sidebar Navigation -->
-      <aside class="left-nav">
-        <div class="mood-note">
-          <p>This is where I write things that make sense only in my head.</p>
-        </div>
+  <body class="journal-page">
+    <aside class="left-nav">
+      <h2>: : Navigation : :</h2>
+      <nav class="internal-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./projects.html">Crafts</a></li>
+          <li><a href="./photography.html">Photography</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-        <h2>: : Navigation : :</h2>
-        <nav class="internal-links">
-          <ul>
-            <li><a href="../index.html">← Home</a></li>
-            <li><a href="./projects.html">Crafts</a></li>
-            <li><a href="./photography.html">Photography</a></li>
-          </ul>
-        </nav>
-      </aside>
-
-      <section class="journal-content">
+    <main>
+      <section>
         <header>
           <h1 class="page-title">Blabbering</h1>
-          <p class="subtitle">
-            A collection of thoughts I probably shouldn't share.
-          </p>
         </header>
-
-        <article class="entry">
-          <h2>: : Entry #000 : :</h2>
-          <time datetime="2025-04-05">April 5, 2025</time>
-          <p>This is a test entry</p>
-        </article>
+        <div id="entries">
+          <!-- Entries will be loaded here -->
+        </div>
       </section>
     </main>
   </body>

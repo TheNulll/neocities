@@ -1,0 +1,29 @@
+.entry-page {
+  display: flex;
+}
+
+.entry-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.entry-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.entry-subtitle {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.entry-content article p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}

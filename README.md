@@ -6,9 +6,10 @@ A personal blog drenched in chaos, existential dread, and questionable life choi
 ## 🧾 Credits
 This site uses blinkies, images, and resources. Special thanks to:
 
-- [Fairycakes Bakery](https://fairycakesbakery.neocities.org/blinkies)
+- [Fairycakes Bakery](https://fairycakesbakery.neocities.org/)
 - [Raining Starss](https://raining-starss.neocities.org/)
 - [Spacehey](https://blog.spacehey.com)
+- [Y2K](https://y2k.neocities.org/)
 - You? – Send me anti-nazi or communist blinkies/stamps, and I’ll link your page!
 
 If you’re the creator of any asset here and want credit or tweaks, open an issue or send a messenge on neocities.

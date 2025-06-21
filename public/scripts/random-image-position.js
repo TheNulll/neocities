@@ -1,20 +1,3 @@
-// Apply random colors to each blog link
-const links = document.querySelectorAll(".blog-links a");
-
-function getRandomColor() { // generates a hex color
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-links.forEach((link) => {
-  link.style.color = getRandomColor();
-});
-
-// Position images randomly
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".the-other-left .stuff img"); // get the images from the right place
   const container = document.querySelector(".stuff"); // place where the images will be assigned
@@ -39,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const height = img.offsetHeight || 40;
 
     let x = getRandom(0, containerWidth - width);
-    let y = getRandom(45, containerHeight - height); // 45 to avoid the title
+    let y = getRandom(50, containerHeight - height - 50); // 50 to avoid the titles
 
     img.style.left = `${x}px`;
     img.style.top = `${y}px`;
